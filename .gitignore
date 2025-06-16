@@ -1,1 +1,58 @@
 test
+tes# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# Build
+dist/
+
+# Nx
+dist/
+tmp/
+.cache/
+nx-report.html
+.project-graph/
+.nx/
+
+# VS Code
+.vscode/
+.history/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*.local
+.env.local
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.sw?
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Optional: Docker
+docker-compose.override.yml
+
+# Optional: Lint cache
+.eslintcache
+
+# Optional: Jest
+jest-cache/
+jest.config.ts
+node_modules
