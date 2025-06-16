@@ -27,6 +27,14 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        echo 'Building project...'
+        sh 'pnpm run build'
+      }
+    }
+
+
     stage('Format Check') {
       steps {
         echo 'Checking formatting...'
@@ -48,12 +56,6 @@ pipeline {
       }
     }
 
-    stage('Build') {
-      steps {
-        echo 'Building project...'
-        sh 'pnpm run build'
-      }
-    }
 
     // stage('Docker Build & Push') {
     //   steps {
