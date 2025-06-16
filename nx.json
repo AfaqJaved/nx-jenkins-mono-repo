@@ -1,0 +1,48 @@
+{
+    "plugins": [
+    ],
+    "parallel": 4,
+    "cacheDirectory": "tmp/nx-cache",
+    "defaultBase": "main",
+    "targetDefaults": {
+      "dev": {
+        "cache": false,
+        "dependsOn": [
+        ]
+      },
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "format": {
+        "cache": true,
+        "dependsOn": [
+        ]
+      },
+       "format:check": {
+        "cache": true,
+        "dependsOn": [
+        ]
+      },
+      "lint": {
+        "cache": true,
+        "dependsOn": [
+        ]
+      },
+      "test": {
+        "cache": true,
+        "dependsOn": [
+        ]
+      },
+      "prisma:deploy": {
+        "cache": true,
+        "dependsOn": [
+        ]
+      },
+      "prisma:generate": {
+        "cache": true
+      }
+    }
+  }

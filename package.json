@@ -1,0 +1,20 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "pnpm exec nx run-many --target=dev --all --parallel",
+    "build": "pnpm exec nx run-many --target=build --all --parallel",
+    "format": "pnpm exec nx run-many --target=format --all --parallel",
+    "format:check": "pnpm exec nx run-many --target=format:check --all --parallel",
+    "lint": "pnpm exec nx run-many --target=lint --all --parallel",
+    "test": "pnpm exec nx run-many --target=test --all --parallel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "devDependencies": {
+    "nx": "^21.2.0"
+  }
+}
